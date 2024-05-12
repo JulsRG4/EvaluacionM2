@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change</title>
+    <!-- Integrar Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex-grow: 1;
+        }
+        .footer {
+            background-color: #212121;
+        }
+        .footer p {
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-black py-6">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-white text-3xl font-semibold">Moda Increíble</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-white hover:text-gray-300">Inicio</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-300">Productos</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-300">Nosotros</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-300">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-8 grid grid-cols-1 gap-8 sm:grid-cols-2">
+        <section class="container mx-auto p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-black text-3xl font-bold mb-8 text-center">Ropa Oversized</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://undergoldapparel.com/cdn/shop/files/HOD_CAFE_06_b7775085-fe2c-44e1-a76f-721b9d366a10_600x.jpg?v=1696022037" alt="Sudadera Oversized" class="w-full h-64 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-white text-xl font-semibold mb-2">Sudadera Oversized</h3>
+                        <p class="text-gray-300 mb-4">Descubre nuestras sudaderas cómodas y modernas.</p>
+                        <button class="bg-black hover:bg-gray-900 text-white font-semibold py-2 px-4 rounded-md">Ver más</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-black text-3xl font-bold mb-8 text-center">Ropa Interior</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://i.pinimg.com/736x/4d/ae/bb/4daebb3bb778c2a4150d7e3c382945de.jpg" alt="Pantie Negro" class="w-full h-64 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-white text-xl font-semibold mb-2">Pantie Negro</h3>
+                        <p class="text-gray-300 mb-4">Confort y estilo en nuestras prendas de ropa interior.</p>
+                        <button class="bg-black hover:bg-gray-900 text-white font-semibold py-2 px-4 rounded-md">Ver más</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-black text-3xl font-bold mb-8 text-center">Camisas Oversized</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://mundocubica.co/wp-content/uploads/2022/12/0S7A9820-scaled.jpg"Camisa Oversized de Dama" class="w-full h-64 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-white text-xl font-semibold mb-2">Camisa Oversized de Dama</h3>
+                        <p class="text-gray-300 mb-4">Diseños modernos para mujeres seguras y con estilo.</p>
+                        <button class="bg-black hover:bg-gray-900 text-white font-semibold py-2 px-4 rounded-md">Ver más</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-black text-3xl font-bold mb-8 text-center">Accesorios</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="https://img.ltwebstatic.com/images3_spmp/2023/05/26/1685093549d0fffdff50cfdd4d0a21a5e7e6a17e41_thumbnail_720x.webp" alt="Camisa Oversized de Dama" class="w-full h-64 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-white text-xl font-semibold mb-2">Cadena tipo cubana</h3>
+                        <p class="text-gray-300 mb-4">Cadena de plata, con diamantes certificados.</p>
+                        <button class="bg-black hover:bg-gray-900 text-white font-semibold py-2 px-4 rounded-md">Ver más</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer text-white py-8">
+        <div class="container mx-auto flex justify-center">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold mb-4">Contáctanos</h2>
+                <p class="text-gray-300 mb-2">Dirección: 123 Calle Principal, Ciudad</p>
+                <p class="text-gray-300 mb-2">Teléfono: 123-456-7890</p>
+                <p class="text-gray-300">Correo electrónico: info@modaincreible.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
